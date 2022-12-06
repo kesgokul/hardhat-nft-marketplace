@@ -24,8 +24,12 @@ A NFT Marketplace that will be deployed on the Ethereum network that will allow 
 
 ### Front-end - Nextjs
 
+https://github.com/kesgokul/nextjs-nft-marketplace.git
+
 1. Using `Nextjs` to setup the project and create different pages for viewing listed NFTs and listing NFTs for sale.
 2. used `web3uikit` to create the connect wallet button and display notificaions.
 3. Used `react-moralis` in combination with `ethers` and to connect to the smart contract and call contract functions to enter the raffle, fetch and display the numbers of players who have entered the raffle and the most recent winner.
 
 ### The Graph protocol - for Indexing
+
+https://github.com/kesgokul/theGraph-nft-marketplace.git
