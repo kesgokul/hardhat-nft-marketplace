@@ -8,6 +8,7 @@ require("dotenv").config();
 require("ethereum-waffle");
 require("@nomiclabs/hardhat-waffle");
 require("solidity-coverage");
+require("@nomiclabs/hardhat-etherscan");
 require("fs");
 // require("@nomicfoundation/hardhat-toolbox");
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -15,6 +16,7 @@ require("fs");
 const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL;
 const PKEY = process.env.GOERLI_PKEY;
 const MAINNET_RPC_URL = process.env.MAINNET_RPC_URL;
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 
 module.exports = {
   solidity: {
@@ -54,6 +56,11 @@ module.exports = {
     },
     player: {
       default: 1,
+    },
+  },
+  etherscan: {
+    apiKey: {
+      goerli: ETHERSCAN_API_KEY,
     },
   },
   gasReporter: {
